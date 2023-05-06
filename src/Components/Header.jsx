@@ -1,19 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { CiFacebook} from "react-icons/ci";
 import {VscGithubAlt} from "react-icons/vsc";
 import {FiLinkedin, FiYoutube} from "react-icons/fi";
 import { Link } from 'react-router-dom';
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 function Header(props) {
-
-
+    const [active, setActive] = useState(false);
     const SocialLinks = [
          {name:'', icon:<CiFacebook/> , link:''},
          {name:'', icon:<VscGithubAlt/> , link:''},
          {name:'', icon:<FiLinkedin /> , link:''}, 
          {name:'', icon:<FiYoutube/> , link:''}
     ]
+
+    const toggleMenu = ()=>{ 
+       setActive(active == true ?  false : true);
+    }
 
 
   return (
@@ -29,10 +32,15 @@ function Header(props) {
           </div>
           
           <div className="navbar-item">
-              <div className="close-btn">
+              <div className="close-btn"  onClick={()=>toggleMenu()}>
                  <FaBars/>
               </div>
-              <div className="navbar-item">
+              <div className={`navbar-item  ${active ? ' active' :  ''} `}>
+                <br />
+                 <div className="close-btn" onClick={()=>toggleMenu()}>
+                      <FaTimes/>
+                 </div>
+                <br />
               <ul>
                   <Link to="#about"><li>01. <span>About</span></li></Link>
                   <Link to="#work"><li>02. <span>Work</span></li></Link>
