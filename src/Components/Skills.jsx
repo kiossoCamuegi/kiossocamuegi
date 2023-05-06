@@ -70,7 +70,7 @@ function Skills(props) {
                              </div>
                         </div>  
                     )
-               })}
+               })}9991 0653  3224 4
               </div>
             </div>
          </div>

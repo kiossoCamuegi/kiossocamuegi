@@ -3,6 +3,7 @@ import { CiFacebook} from "react-icons/ci";
 import {VscGithubAlt} from "react-icons/vsc";
 import {FiLinkedin, FiYoutube} from "react-icons/fi";
 import { Link } from 'react-router-dom';
+import { FaBars } from 'react-icons/fa';
 
 function Header(props) {
 
@@ -26,8 +27,13 @@ function Header(props) {
                    <div className="logo-text">K</div>
                </div>
           </div>
+          
           <div className="navbar-item">
-               <ul>
+              <div className="close-btn">
+                 <FaBars/>
+              </div>
+              <div className="navbar-item">
+              <ul>
                   <Link to="#about"><li>01. <span>About</span></li></Link>
                   <Link to="#work"><li>02. <span>Work</span></li></Link>
                   <Link to="#skills"><li>03. <span>Skills</span></li></Link> 
@@ -38,7 +44,11 @@ function Header(props) {
                     <Link to='/resume'><button className='bg-main box-text'>Resume</button></Link>
                     <button className='ml-2'>Hire-me</button>
                </div>
+              </div>
           </div>
+
+
+
        </div>
        <div className="hero" id='about'>
            <div className="intro">Hello buddy , my name is</div>
