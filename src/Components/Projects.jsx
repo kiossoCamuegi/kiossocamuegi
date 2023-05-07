@@ -5,13 +5,79 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import ModalData from './ModalData';
 
+ 
 
 const items = [
+  {
+    image:require('../Images/Projects/hosting.jpg'), 
+    video_code:'',
+    title:'Hosting website design',  
+    link:'https://kiossocamuegi.github.io/Serverservicewebsite/', 
+    description:'hosting is a wonderful hosting website with a unique interface created with the best stacks out there.', 
+    skills:["Html", "Javascript", "Css"]
+  }, 
+  {
+    image:require('../Images/Projects/hungrylion.jpg'), 
+    video_code:'',
+    title:'Hungry lion website redesign', 
+    link:'https://kiossocamuegi.github.io/hungrylion/', 
+    description:'We all have a hungry lion inside us, and good food comes from the best websitesz and one of them is the hungrylion website redesign', 
+    skills:["Html", "Javascript", "Css"]
+  }, 
+  {
+    image:require('../Images/Projects/handyman.jpg'), 
+    video_code:'',
+    title:'Handyman website',  
+     link:' https://kiossocamuegi.github.io/handyman/', 
+    description:'All large companies have  a large website and in this case Handyman is the perfect example for a Construction website design.', 
+    skills:["Html", "Javascript", "Css"]
+  },  
+  {
+    image:require('../Images/Projects/smallapps.jpg'), 
+    video_code:'',
+    title:'Small Apps website', 
+    link:'https://kiossocamuegi.github.io/smallapps/', 
+    description:'Showcase your app with Small Apps,  Besides its beautiful design. Laapp is an incredibly rich core framework for you to showcase your App.', 
+    skills:["Html", "Javascript", "Css"]
+  },  
+  {
+    image:require('../Images/Projects/builders.jpg'), 
+    video_code:'',
+    title:'Builders website design', 
+    link:' https://kiossocamuegi.github.io/builders/', 
+    description:'A simple but handsome landing page design for small companies is all you need when starting a Hustle', 
+    skills:["Html", "Javascript", "Css"]
+  }, 
+  {
+    image:require('../Images/Projects/microsoftexcel.jpg'), 
+    video_code:'',
+    title:'Microsoft excel (website version)', 
+    link:' https://kiossocamuegi.github.io/microsoftexcelclone/', 
+    description:'Microsoft excel is a wonderful platform, imagine what it would be like to use this amazing software in a browser, ready here it is.', 
+    skills:["Html", "Javascript", "Css"]
+  },
+  {
+    image:require('../Images/Projects/accesslite.jpg'), 
+    video_code:'',
+    title:'ACCESSELITE website design', 
+    link:'https://kiossocamuegi.github.io/ACCESSELITE/', 
+    description:'Accesslite is simple but a nice healthcare website design for your love ones, take  a look and see some magic .', 
+    skills:["Html", "Javascript", "Css"]
+  }, 
+  {
+    image:require('../Images/Projects/bureua.jpg'), 
+    video_code:'',
+    title:'Bureua website design', 
+    link:'https://kiossocamuegi.github.io/bureua/', 
+    description:'Bureua is simple but a nice team website design for your team, take  a look and see the power of tech in action.', 
+    skills:["Html", "Javascript", "Css"]
+  }, 
+  /*** fake ones */
   {
     image:require('../Images/Projects/youtube.jpg'), 
     video_code:'',
     title:'Youtube website clone', 
-    color:'red',
+    link:' ',
     description:'All rights reserved. This work may not be translated or copied in whole or in part without the written permission of the publisher.', 
     skills:["React.js", "Redux", "Sql", "Sass"]
   }, 
@@ -19,7 +85,7 @@ const items = [
     image:require('../Images/Projects/whatsapp.png'), 
     video_code:'',
     title:'Whatsapp redeign', 
-    color:'red',
+    link:' ',
     description:'All rights reserved. This work may not be translated or copied in whole or in part without the written permission of the publisher.', 
     skills:["React.js", "Css3", "Redux", "Firebase"]
   }, 
@@ -27,7 +93,7 @@ const items = [
     image:require('../Images/Projects/facebook.jpg'), 
     video_code:'',
     title:'Facebook clone website', 
-    color:'red',
+    link:' ',
     description:'All rights reserved. This work may not be translated or copied in whole or in part without the written permission of the publisher.', 
     skills:["Html", "Css3", "Javascript"]
   }, 
@@ -35,7 +101,7 @@ const items = [
     image:require('../Images/Projects/tiktok.png'), 
     video_code:'',
     title:'Tiktok website redesign', 
-    color:'red',
+    link:' ',
     description:'All rights reserved. This work may not be translated or copied in whole or in part without the written permission of the publisher.', 
     skills:["React.js", "Firebase", "Css3", "Redux"]
   }, 
@@ -43,7 +109,7 @@ const items = [
     image:require('../Images/Projects/finger.jpg'), 
     video_code:'',
     title:'Landing page website design', 
-    color:'red',
+    link:' ',
     description:'All rights reserved. This work may not be translated or copied in whole or in part without the written permission of the publisher.', 
     skills:["Html", "Css3", "Javascript"]
   }, 
@@ -51,7 +117,7 @@ const items = [
     image:require('../Images/Projects/food.jpg'), 
     video_code:'',
     title:'Pizza website design', 
-    color:'red',
+    link:' ',
     description:'All rights reserved. This work may not be translated or copied in whole or in part without the written permission of the publisher.', 
     skills:["React.js", "Css3", "Styled components"]
   }, 
@@ -59,7 +125,7 @@ const items = [
     image:require('../Images/Projects/disney.jpg'), 
     video_code:'',
     title:'Disney website clone', 
-    color:'red',
+    link:' ',
     description:'All rights reserved. This work may not be translated or copied in whole or in part without the written permission of the publisher.', 
     skills:["Html", "Css3", "Javascript", "Ajax", "Php"]
   }, 
@@ -67,8 +133,8 @@ const items = [
     image:require('../Images/Projects/portofolio.jpg'), 
     video_code:'',
     title:'Portofolio website design', 
-    color:'red',
-    description:'All rights reserved. This work may not be translated or copied in whole or in part without the written permission of the publisher.', 
+    link:'https://kiossocamuegi.github.io/portofoliodesign/',
+    description:"There is no better way to demonstrate your skills than by creating projects, that's why jsy has a portfolio", 
     skills:["Html", "Css3", "Javascript"]
   }, 
 ];
@@ -110,7 +176,7 @@ function Items({currentItems}){
               })}
             </div>
             <ModalData toggle_btn={
-                   <button className='btn'>Take a look</button>
+                <a target='_blank' href={item.link}><button className='btn'>Take a look</button></a>
              }/>
           </div>
         </article> 
