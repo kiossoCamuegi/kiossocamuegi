@@ -43,7 +43,7 @@ function Footer(props) {
              <div className="contacts">
                  <div className="box"> kiossocamuegi@gmail.com</div>
                  <div className="box">+244 942 383 808</div>
-                 <div className="box">kiossocamuegi.netlify.com</div>
+                 <div className="box">kiossocamuegi.pages.dev</div>
              </div>
           </div>
        </div>
