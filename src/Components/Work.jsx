@@ -20,7 +20,7 @@ function Work() {
     },
     
     {
-        job_company_name:'Dill',
+        job_company_name:'Dil',
         job_company_type:'Intern',
         job_company_position:'Software engineer',
         job_company_date:'From 10.06.2021 till 10.10.2021',

@@ -72,9 +72,17 @@ const items = [
     description:'Bureua is simple but a nice team website design for your team, take  a look and see the power of tech in action.', 
     skills:["Html", "Javascript", "Css"]
   }, 
+  {
+    image:require('../Images/Projects/ekhavil.jpg'), 
+    video_code:'',
+    title:'Ekhavil website', 
+    link:'https://ekhavil.com', 
+    description:'ekhavil is one of the best real estate companies in angola, and I had the honor of helping with the creation of the website, namely the dashboard', 
+    skills:["Html", 'Php', 'Jquery', 'API', "Javascript", "Css"]
+  }, 
   /*** fake ones */
   {
-    image:require('../Images/Projects/youtube.jpg'), 
+    image:require('../Images/Projects/youtube.png'), 
     video_code:'',
     title:'Youtube website clone', 
     link:' ',
