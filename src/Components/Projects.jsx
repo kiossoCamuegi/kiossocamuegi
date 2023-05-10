@@ -41,6 +41,14 @@ const items = [
     skills:["Html", "Javascript", "Css"]
   },  
   {
+    image:require('../Images/Projects/bns.jpg'), 
+    video_code:'',
+    title:'Bynary website design',  
+    link:'https://kiossocamuegi.github.io/bns/', 
+    description:'Bynary considers every little detail to ensure that the system run smoothly and responsively.', 
+    skills:["Html", "Javascript", "Css"]
+  }, 
+  {
     image:require('../Images/Projects/builders.jpg'), 
     video_code:'',
     title:'Builders website design', 
