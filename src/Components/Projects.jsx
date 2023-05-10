@@ -120,6 +120,14 @@ const items = [
     link:' ',
     description:'All rights reserved. This work may not be translated or copied in whole or in part without the written permission of the publisher.', 
     skills:["Html", "Css3", "Javascript"]
+  },
+  {
+    image:require('../Images/Projects/car.jpeg'), 
+    video_code:'',
+    title:'2D Desert racing car Game', 
+    link:' ',
+    description:'All rights reserved. This work may not be translated or copied in whole or in part without the written permission of the publisher.', 
+    skills:["Html", "Css3", "Javascript"]
   }, 
   {
     image:require('../Images/Projects/food.jpg'), 
