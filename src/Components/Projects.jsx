@@ -41,13 +41,13 @@ const items = [
     skills:["Html", "Javascript", "Css"]
   },  
   {
-    image:require('../Images/Projects/bns.jpg'), 
+    image:require('../Images/Projects/car.jpg'), 
     video_code:'',
-    title:'Bynary website design',  
-    link:'https://kiossocamuegi.github.io/bns/', 
-    description:'Bynary considers every little detail to ensure that the system run smoothly and responsively.', 
-    skills:["Html", "Javascript", "Css"]
-  }, 
+    title:'2D Desert racing car Game', 
+    link:'https://kiossocamuegi.github.io/wizacar',
+    description:'All rights reserved. This work may not be translated or copied in whole or in part without the written permission of the publisher.', 
+    skills:["Html", "Css3", "Javascript"]
+  },
   {
     image:require('../Images/Projects/builders.jpg'), 
     video_code:'',
@@ -112,6 +112,14 @@ const items = [
     link:' ',
     description:'All rights reserved. This work may not be translated or copied in whole or in part without the written permission of the publisher.', 
     skills:["Html", "Css3", "Javascript"]
+  },  
+  {
+    image:require('../Images/Projects/bns.jpg'), 
+    video_code:'',
+    title:'Bynary website design',  
+    link:'https://kiossocamuegi.github.io/bns/', 
+    description:'Bynary considers every little detail to ensure that the system run smoothly and responsively.', 
+    skills:["Html", "Javascript", "Css"]
   }, 
   {
     image:require('../Images/Projects/tiktok.png'), 
@@ -125,14 +133,6 @@ const items = [
     image:require('../Images/Projects/finger.jpg'), 
     video_code:'',
     title:'Landing page website design', 
-    link:' ',
-    description:'All rights reserved. This work may not be translated or copied in whole or in part without the written permission of the publisher.', 
-    skills:["Html", "Css3", "Javascript"]
-  },
-  {
-    image:require('../Images/Projects/car.jpeg'), 
-    video_code:'',
-    title:'2D Desert racing car Game', 
     link:' ',
     description:'All rights reserved. This work may not be translated or copied in whole or in part without the written permission of the publisher.', 
     skills:["Html", "Css3", "Javascript"]
