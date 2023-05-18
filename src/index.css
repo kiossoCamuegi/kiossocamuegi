@@ -796,7 +796,17 @@ body  .card-data button:hover{
   padding:20px;
  }
 
+ .resume .block{
+  width:100%;
+  max-width:430px; 
+  padding:10px;
+ }
+
+
+
  body .resume .btn{ 
+  width:100%;
+  text-align: center;
   padding:10px 20px;
   color:var(--sc-color);
   cursor: pointer;
@@ -806,6 +816,7 @@ body  .card-data button:hover{
   color:#ffff;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 body .resume .btn svg{
