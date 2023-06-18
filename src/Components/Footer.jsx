@@ -7,9 +7,9 @@ import { Link } from 'react-router-dom';
 function Footer(props) { 
   
   const SocialLinks = [
-    {name:'', icon:<CiFacebook/> , link:'#'},
-    {name:'', icon:<VscGithubAlt/> , link:'#'},
-    {name:'', icon:<FiLinkedin /> , link:'#'}, 
+    {name:'', icon:<CiFacebook/> , link:'https://www.facebook.com/kiosso.camuegi.71/'},
+    {name:'', icon:<VscGithubAlt/> , link:'https://kiossocamuegi.github.io/'},
+    {name:'', icon:<FiLinkedin /> , link:'https://www.linkedin.com/in/kiosso-camuegi-564b79211/'}, 
     {name:'', icon:<FiYoutube/> , link:'#'}
 ]
 

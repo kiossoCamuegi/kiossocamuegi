@@ -9,6 +9,7 @@ import Projects from './Components/Projects';
 import { useEffect } from 'react';
 import Footer from './Components/Footer';
 import Resume from './Resume';
+import Hire from './Hire';
 
 function App() {
   const ColorData = {
@@ -54,6 +55,7 @@ function App() {
                    </>
                  } /> 
              <Route path='/resume' element={<Resume/>}/>     
+             <Route path='/hire_me' element={<Hire/>} />
         </Routes> 
     </BrowserRouter>
   );

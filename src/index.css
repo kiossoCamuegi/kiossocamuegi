@@ -57,7 +57,7 @@ body .space .link{
    padding-bottom:6px;
 }
   
-body .header .navbar{
+body  .navbar{
    color:#ccd6f6;
    display: flex;
    align-items: center;
@@ -66,12 +66,12 @@ body .header .navbar{
 }
 
 
-body .header .navbar .navbar-item{
+body   .navbar .navbar-item{
   display: flex;
   align-items: center;
 }
 
-body .header .navbar .navbar-item ul{
+body   .navbar .navbar-item ul{
   display: flex;
   align-items: center;
   list-style: none;
@@ -80,7 +80,8 @@ body .header .navbar .navbar-item ul{
 }
 
 
-body .header  button{
+body .header  button,
+body  .navbar button{
   border:1px solid var(--sc-color);
   padding:10px 20px;
   color:var(--sc-color);
@@ -97,6 +98,7 @@ body .ml-2{
   margin-left:20px;
 }
 
+body .navbar ul li,
 body .header ul li {
     color: var(--sc-color);
     font-size:16px;
@@ -105,12 +107,13 @@ body .header ul li {
     margin:0px 15px;
 }
 
+body .navbar ul li span,
 body .header ul li span{
   margin-left:5px;
   color:#ccd6f6;
 }
-
-body .header .logo{
+ 
+body .navbar .logo{
   width:60px;
   height:60px;
   border-radius:100%;
@@ -151,6 +154,10 @@ body .header  .hero  .name{
 
 body .bg-main{
   background:var(--sc-color) !important;
+}
+
+body .bg-pm{
+  background:var(--pm-color) !important;
 }
 
 body .header  .hero  h2{
@@ -216,12 +223,12 @@ body .header .social-links .line{
 }
 
 
-body .header .close-btn{
+body .navbar .close-btn{
    cursor: pointer;
    display: none;
 }
 
-body .header .close-btn svg{
+body .navbar .close-btn svg{
 width:30px; 
 height:30px;
 }
@@ -242,7 +249,7 @@ body .work-experience h1 span{
 
 body .work-experience  h1{
     font-size:40px;
-    margin:0px;
+    margin:0px; 
     margin-bottom:20px;
 }
 
@@ -592,7 +599,7 @@ body .projects-row{
   margin:20px 0px;
 }
 
- 
+ body .form-card,
 .project-card {
     width:300px;
     min-width:455px;
@@ -618,6 +625,10 @@ body .projects-row{
   background-repeat: no-repeat; 
   transition: .5s; 
   margin:10px 5px;
+}
+
+body .form-card{ 
+  height:620px;
 }
 
  
@@ -647,7 +658,7 @@ transition: .5s;
 margin:10px 5px;
 }
 
-
+body .form-card:hover,
 body .projects-row .project-card:hover { 
   background-size: calc(100% - var(--_p)) calc(100% - var(--_p));
 }
@@ -858,12 +869,12 @@ body .resume .btn svg{
         min-height:1400px; 
     }
 
-     body .header .close-btn{
+     body .navbar .close-btn{
        display: block;
        cursor: pointer;
      }
 
-       body  .header .navbar-item .navbar-item{
+       body  .navbar-item .navbar-item{
            position: fixed;
            top:0px;
            left:0px;
@@ -879,27 +890,27 @@ body .resume .btn svg{
        }
 
        
-       body  .header .navbar-item .navbar-item.active{
+       body  .navbar-item .navbar-item.active{
         display: flex !important;
        }
 
-       body  .header .navbar-item .navbar-item svg{
+       body  .navbar-item .navbar-item svg{
           width:40px;
           height:40px;
           fill:#ffff;
           color:#ffff;
        }
 
-       body  .header .navbar-item .navbar-item ul,
-       body  .header .navbar-item .navbar-item .buttons{
+       body  .navbar-item .navbar-item ul,
+       body  .navbar-item .navbar-item .buttons{
           display: flex;
            flex-direction: column;
           align-items: center;
        }
 
        
-       body  .header .navbar-item .navbar-item ul li,
-       body  .header .navbar-item .navbar-item .buttons button{
+       body  .navbar-item .navbar-item ul li,
+       body  .navbar-item .navbar-item .buttons button{
           margin:10px 0px;
        }
 

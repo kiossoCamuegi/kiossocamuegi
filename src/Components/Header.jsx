@@ -4,60 +4,23 @@ import {VscGithubAlt} from "react-icons/vsc";
 import {FiLinkedin, FiYoutube} from "react-icons/fi";
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import Navbar from './Navbar';
 
 function Header(props) {
-    const [active, setActive] = useState(false);
-    const SocialLinks = [
-         {name:'', icon:<CiFacebook/> , link:''},
-         {name:'', icon:<VscGithubAlt/> , link:''},
-         {name:'', icon:<FiLinkedin /> , link:''}, 
-         {name:'', icon:<FiYoutube/> , link:''}
-    ]
 
-    const toggleMenu = ()=>{ 
-       setActive(active == true ?  false : true);
-    }
-
+    const SocialLinks = [ 
+         {name:'', icon:<CiFacebook/> , link:'https://www.facebook.com/kiosso.camuegi.71/'},
+         {name:'', icon:<VscGithubAlt/> , link:'https://kiossocamuegi.github.io/'},
+         {name:'', icon:<FiLinkedin /> , link:'https://www.linkedin.com/in/kiosso-camuegi-564b79211/'}, 
+         {name:'', icon:<FiYoutube/> , link:'#'}
+    ];
 
   return (
     <div className='header' 
       style={{background:`${props.color ? props.color : 'var(--pm-color)'}`,
              backgroundBlendMode:`${props.blend ? props.blend : ''}` }} >
       <div className="wrapper">
-      <div className="navbar">
-          <div className="navbar-item">
-               <div className="logo">
-                   <div className="logo-text">K</div>
-               </div>
-          </div>
-          
-          <div className="navbar-item">
-              <div className="close-btn"  onClick={()=>toggleMenu()}>
-                 <FaBars/>
-              </div>
-              <div className={`navbar-item  ${active ? ' active' :  ''} `}>
-                <br />
-                 <div className="close-btn" onClick={()=>toggleMenu()}>
-                      <FaTimes/>
-                 </div>
-                <br />
-              <ul>
-                  <Link to="#about"><li>01. <span>About</span></li></Link>
-                  <Link to="#work"><li>02. <span>Work</span></li></Link>
-                  <Link to="#skills"><li>03. <span>Skills</span></li></Link> 
-                  <Link to="#projects"><li>04. <span>Projects</span></li></Link>
-                  <Link to="#contacts"><li>05. <span>Contacts</span></li></Link>
-               </ul>
-               <div className="buttons">
-                    <Link to='/resume'><button className='bg-main box-text'>Resume</button></Link>
-                    <button className='ml-2'>Hire-me</button>
-               </div>
-              </div>
-          </div>
-
-
-
-       </div>
+       <Navbar/>
        <div className="hero" id='about'>
            <div className="intro">Hello buddy , my name is</div>
             <h1 className="name">Kiosso Camuegi.</h1>
