@@ -6,10 +6,35 @@ import Work from './Components/Work';
 import Skills from './Components/Skills';
 import { BrowserRouter, Route, Routes } from "react-router-dom" 
 import Projects from './Components/Projects';
-import { useEffect } from 'react';
 import Footer from './Components/Footer';
 import Resume from './Resume';
 import Hire from './Hire';
+
+function App() {
+  return ( 
+    <BrowserRouter>
+        <Routes>
+             <Route path='/' element={
+                    <>
+                    <Header />
+                    <Work/>
+                    <Skills  />
+                    <Projects/>
+                    <Footer/>
+                   </>
+                 } /> 
+             <Route path='/resume' element={<Resume/>}/>     
+             <Route path='/hire_me' element={<Hire/>} />
+        </Routes> 
+    </BrowserRouter>
+  );
+}
+
+export default App;
+
+
+/*
+
 
 function App() {
   const ColorData = {
@@ -47,9 +72,9 @@ function App() {
         <Routes>
              <Route path='/' element={
                     <>
-                    <Header  props={'' /*color={ColorData.background} blend={ColorData.blend} */} />
+                    <Header  props={color={ColorData.background} blend={ColorData.blend} } />
                     <Work/>
-                    <Skills props={'' /*scolor={ColorData.background2} color={ColorData.background} blend={ColorData.blend} */} />
+                    <Skills props={scolor={ColorData.background2} color={ColorData.background} blend={ColorData.blend}} />
                     <Projects/>
                     <Footer/>
                    </>
@@ -61,4 +86,5 @@ function App() {
   );
 }
 
-export default App;
+
+*/
