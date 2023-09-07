@@ -28,7 +28,7 @@ function Footer(props) {
                  <ul>
                    {SocialLinks.map((item, index)=>{
                       return ( 
-                        <a key={index} href={item.link} alt={item.name} target='_blank'>
+                        <a key={index} href={item.link}  rel="noreferrer" alt={item.name} target='_blank'>
                          <li> 
                             {item.icon} 
                           </li>

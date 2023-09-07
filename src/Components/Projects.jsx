@@ -1,8 +1,6 @@
-import React, { useState } from 'react'
-import { Form } from 'react-bootstrap'
+import React, { useState } from 'react' 
 import ReactPaginate from 'react-paginate';
-import { Link } from 'react-router-dom'
-import styled from 'styled-components'
+import { Link } from 'react-router-dom' 
 import ModalData from './ModalData';
 
  
@@ -211,7 +209,7 @@ function Items({currentItems}){
           <div className="card-data">
           <div className="image">
           {item.company ?  
-           <a href={item.company.link} target='_blank'>
+           <a href={item.company.link}  rel="noreferrer" target='_blank'>
                <div className="badge bg-main">
                 {item.company ? item.company.name : ""}
             </div>
@@ -227,7 +225,7 @@ function Items({currentItems}){
               })}
             </div>
             <ModalData toggle_btn={
-                <a target='_blank' href={item.link}><button className='btn'>Take a look</button></a>
+                <a  rel="noreferrer" target='_blank' href={item.link}><button className='btn'>Take a look</button></a>
              }/>
           </div>
         </article> 

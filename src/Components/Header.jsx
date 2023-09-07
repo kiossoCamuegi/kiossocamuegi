@@ -1,9 +1,7 @@
-import React, { useState } from 'react'
+import React  from 'react'
 import { CiFacebook} from "react-icons/ci";
 import {VscGithubAlt} from "react-icons/vsc";
-import {FiLinkedin, FiYoutube} from "react-icons/fi";
-import { Link } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import {FiLinkedin, FiYoutube} from "react-icons/fi"; 
 import Navbar from './Navbar';
 
 function Header(props) {
@@ -36,7 +34,7 @@ function Header(props) {
             {SocialLinks.map((item, index)=>{
                return (
                  <li key={index}>
-                    <a href={item.link} alt={item.name} target='_blank'>
+                    <a href={item.link} alt={item.name}  rel="noreferrer" target='_blank'>
                        {item.icon}
                    </a>
                 </li>)
